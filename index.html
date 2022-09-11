@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayuda JS</title>
+</head>
+<body>
+    <header>
+
+        <h1>Ayuda JS</h1>
+
+        <ul>
+
+            <li><a href="#correr-scripts">Correr scripts</a><span>: etiqueta script</span></li>
+            <li><a href="#variables-constantes">Variables y Constantes</a><span>: var, let, const</span></li>
+            <li><a href="#tipos-variables-constantes">Tipos de Variables y Constantes</a><span>: definicion + funciones</span></li>
+            <li><a href="#desarrollo">Desarrollo</a><span></span>: console.log(), alert(), confirm()</li>
+            <li><a href="#elementos-dom">Elementos DOM (HTML)</a><span>: document.querySelector/All</span></li>
+
+        </ul>
+
+    </header>
+    <main>
+        <section>
+
+            <h2>Básicos</h2>
+            <div id="correr-scripts">
+
+                <h3>Correr scripts</h3>
+
+                <pre>
+
+                    &lt;script src="script.js"&gt;&lt;/script&gt;
+
+                    &lt;script&gt;
+                    
+                        console.log("run")
+
+                    &lt;/script&gt;
+                    
+                </pre>
+
+            </div>
+            <div id="variables-constantes">
+
+                <h3>Variables y Constantes</h3>
+
+                <pre>
+
+                    const nombre_de_la_constante = "valor_constante"; // valor que no cambia
+                    
+                    var nombre_de_la_variable = "valor_variable"; // global para todos los contextos hijos
+                    
+                    let nombre_de_la_variable = "valor_variable"; // solo dentro del contexto
+
+                </pre>
+
+            </div>
+            <div id="tipos-variables-constantes">
+
+                <h3>Tipos de variables y Constantes</h3>
+
+                <pre>
+
+                    var numero = 1; // number
+                    
+                    var texto = "texto"; // string
+
+                    var expresion_regular = /()/; // regex
+                    
+                    var objeto = { propiedad1: "valor1", propiedad2: 2 } // object
+                    
+                    var booleano = false || true; // boolean
+                    
+                    var arreglo = ["texto", 1, "", { propiedad1: valor1, propiedad2: 2 }];
+                    
+                    var indefinido; // undefined
+
+                    var nulo = null; // value null
+
+                    var funcion = funtion (param1, param2) {console.log(param1 + param2)} // function
+                    function funcion (param1, param2) {console.log(param1 + param2)}
+
+                </pre>
+
+            </div>
+            <div id=desarrollo>
+
+                <h3>Desarrollo</h3>
+
+                <pre>
+
+                    console.log(variable, "otro parametro"); // mostrar por consola
+
+                    alert(variable); // mostrar en ventana emergente
+
+                    var variable_prompt = prompt("mensaje","valor por defecto"); // muestra en ventana emergente y devuelve valor del usuario (true/false)
+                    
+                    var variable_confirm = confirm("mensaje");
+
+                </pre>
+
+            </div>
+            <div id=elemento-dom>
+
+                <h3>Elemento DOM (HTML)</h3>
+
+                <pre>
+
+                    document.querySelector("tag") // &lt;tag&gt;&lt;/tag&gt; // devuelve eemento por etiqueta
+                    
+                    document.querySelector(clase) // class // devuelve elemennto por clase
+                    
+                    document.querySelector(#id) // devuelve elemento por id
+                    
+                    document.querySelectorAll(attr='valor_atributo') // src // devuelve un elemento del valor_atributo
+                    
+                    -------------------------------------------------------------------------------------------------------------
+                  
+                    document.querySelector('etiqueta.clase#id') // devuelve un arreglo de elementos que coinciden con el parametro
+                  
+                    -------------------------------------------------------------------------------------------------------------
+
+                    document.querySelectorById('id') // devuelve un arreglo por id
+                    
+                    document.querySelectorByClassName('clase') // devuelve un arreglo por clase
+                    
+                    document.querySelectorTagName('etiqueta') // devuelve un arreglo por etiqueta
+
+                </pre>
+            </div>
+
+        </section>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
